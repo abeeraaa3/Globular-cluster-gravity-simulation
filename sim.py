@@ -9,7 +9,7 @@ print("✓ Running on CPU")
 # CONSTANTS
 # ============================================================================
 
-NUM_PARTICLES = 10000
+NUM_PARTICLES = 5000
 GRAVITY = 1.0
 BREATHING_FREQUENCY = 0.5
 BREATHING_AMPLITUDE = 0.3
@@ -265,10 +265,6 @@ def main():
         
         window.show()
         frame_count += 1
-        
-        # Update title every 30 frames
-        if frame_count % 30 == 0:
-            window.set_title(f"Globular Cluster | Frame: {frame_count}")
 
 if __name__ == "__main__":
     main()
